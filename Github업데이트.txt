@@ -1,0 +1,8 @@
+1. 추가할 파일 더하기
+    - git add .
+
+2. 히스토리 만들기
+    - git commit -m "설명"
+
+3. Github로 올리기
+    - git push

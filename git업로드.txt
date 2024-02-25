@@ -1,0 +1,25 @@
+1. 초기화(처음 사용시에만)
+- git init
+
+2. 추가할 파일 더하기
+- git add .
+
+3. 상태확인
+- git status
+
+4. 히스토리 만들기
+- git commit -m "커밋메모내용"
+
+5. Github repository랑 내 로컬 프로젝트 연결
+- git remote add origin https://github.com/hyunmin0818/home.git
+
+6. 연결확인
+    - git remote -v
+    (
+        origin  https://github.com/hyunmin0818/home.git (fetch)
+        origin  https://github.com/hyunmin0818/home.git (push)
+    )
+
+7. Github로 push
+    - git push origin main
+        * main자리에는 branch이름이 들어가야함
