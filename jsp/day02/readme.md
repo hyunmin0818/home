@@ -1,3 +1,36 @@
-<h1>charset</h1>
-```jsp
-%@ page language="java" contentType="text/html;harset=UTF-8"pageEncoding="UTF-8"%>```
+# charset
+
+```
+<%@ page language="java" contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%>
+```
+
+**이 코드는 JSP페이지가 생성할 문서가 HTML이며, 문서의 캐릭터셋(character set이 UTF-8인 것을 나타낸다.**
+
+# JSP 페이지의 구성 요소
+
+**JSP 페이지를 작성하려면 크게 7가지 구성 요소들이 있는데**
+
+1. 디렉티브(Directive)
+2. 스크립트: 스크립트릿(Scriptlet), 표현식(Expression), 선언부(declaration)
+3. 표현언어(Expression Language)
+4. 기본 객체(Implicit Object)
+5. 정적인 데이터
+6. 표준 액션 태그(Action Tag)
+7. 커스텀 태그(Custom Tag)와 표준 태그 라이브러리(JSTL)
+
+**이 7가지 구성 요소들을 익히는 과정이 바로 JSP를 공부하는 과정이라고 할 수 있다.**
+
+# 디렉티브
+
+**디렉티브는 JSP 페이지에 대한 설정 정보를 지정할 때 사용되며 다음과 같은 구문을 통해서 디렉티브를 선언한다.**
+
+```
+<%@ 디렉티브이름 속성1="값1" 속성2="값2" ... %>
+```
+
+**디렉티브는 '<%@'으로 시작하고 그 뒤에 디렉티브 이름이 위치하게 한다. 사용하는 디렉티브에 따라서 알맞은 속성이 위치하며 '%>'로 디렉티브 선언이 끝난다.**
+|디렉티브|ㅤ|설명|ㅤ|ㅤ|ㅤ|ㅤ|
+|----|:----|:----:|----:|----|:----:|----:
+|page|JSP페이지에 대한 정보를 지정하고 JSP가 생성하는 문서의 타입, 출력버퍼의 크기, 에러 페이지등 jsp페이지에서 필요로 하는 정보를 설정
+|taglib|JSP페이지에서 사용할 태그 라이브러리를 지정한다.
+|include|JSP페이지의 특정 영역에 다른 문서를 포함시킨다.
