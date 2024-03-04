@@ -13,3 +13,16 @@
 - **res.send(body), res.send(status, body) : 클라이언트에 응답을 보냄. 상태 코드는 옵션.<br> 기본 콘텐츠 타입은 text/html이므로 text/plain을 보내려면 res.set('Content-type', 'text/plain')을 먼저 호출해야 한다.**
 - **res.sendFile(경로): 경로에 위치한 파일을 응답한다.**
 - **res.attachment([filename]), res.download(path, [filename], [callback]) : 클라이언트에게 파일을 표시하지 말고 다운로드 받으라고 전송함. filename을 주면 파일 이름이 명시되며, res.attachment는 헤더만 설정하므로 다운로드를 위한 node 코드가 따로 필요하다.**
+
+### res.json(JSON)
+
+```
+// 이 부분을 하나로 짧게 합친 express메소드
+res.writeHead(200, {'Content-type' : 'application/json'});
+res.end(JSON.stringfy({hello: 'nomad'}));
+
+// ↓
+res.json({hello: 'nomad'})
+```
+
+### res.send([body])
